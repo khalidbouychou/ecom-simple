@@ -243,6 +243,22 @@
         </div>
     </footer>
     <script src="./app.js"></script>
+    <!-- Place this just before </body> -->
+<div id="infoModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:1000; justify-content:center; align-items:center;">
+    <div style="background:#fff; padding:2rem; border-radius:8px; min-width:300px; position:relative;">
+      <button onclick="document.getElementById('infoModal').style.display='none'" style="position:absolute; top:10px; right:10px; background:none; border:none; font-size:1.2rem; cursor:pointer;">&times;</button>
+      <h2>Khalid Bouychou</h2>
+      <p><strong>Role:</strong> Software Engineer</p>
+      <p><strong>Tel:</strong> +2127 81 4588 48</p>
+      <p><strong>Email:</strong> khbouych@gmail.com</p>
+      <p><strong>Linkedin:</strong> Khalid bouychou</p>
+    </div>
+  </div>
+  <script>
+    window.onload = function() {
+      document.getElementById('infoModal').style.display = 'flex';
+    };
+  </script>
 </body>
 
 </html>
